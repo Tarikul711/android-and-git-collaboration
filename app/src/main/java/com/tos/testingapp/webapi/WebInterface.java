@@ -1,6 +1,7 @@
 package com.tos.testingapp.webapi;
 
 
+import com.tos.testingapp.webapi.unknown.UnknownData;
 import com.tos.testingapp.webapi.user.UserData;
 
 import okhttp3.ResponseBody;
@@ -19,6 +20,9 @@ public interface WebInterface {
 
     @GET(WebMethod.USERS_DATA)
     Call<UserData> getAllUserData();
+
+    @GET(WebMethod.UNKNOWN_DATA)
+    Call<UnknownData> getAllUnknownData();
 
    /* @FormUrlEncoded
     @POST(WebMethod.CUSTOMER_LOGIN)

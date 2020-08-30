@@ -4,4 +4,7 @@
     <dimen name="item_user_height">140dp</dimen>
     <dimen name="text_size_user_name">20dp</dimen>
     <dimen name="text_size_user_email">16sp</dimen>
+    <dimen name="recyclerview_padding">4dp</dimen>
+    <dimen name="user_item_top">5dp</dimen>
+    <dimen name="unnown_activity_padding">5dp</dimen>
 </resources>
