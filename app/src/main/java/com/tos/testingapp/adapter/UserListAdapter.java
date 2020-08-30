@@ -29,7 +29,7 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.ViewHo
         this.context = context;
         this.items = items;
     }
-
+// After change 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
