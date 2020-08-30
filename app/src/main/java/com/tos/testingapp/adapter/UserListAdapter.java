@@ -40,12 +40,10 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        DepositAccount item = items.get(position);
-        holder.tvDepositName.setText(item.getProductName());
-        holder.tvDepositNumber.setText(item.getId());
-        holder.tvDepositStatus.setText(item.getStatus());
-        holder.tvDepositAmount.setText(String.format("₱%s", doubleToStringNoDecimal(Double.parseDouble(item.getBalance()))));
-        holder.tvDepositName.setTag(item);
+        Datum item = items.get(position);
+        holder.tvName.setText(String.format("%s %s", item.getFirstName(), item.getLastName()));
+        holder.tvEmail.setText(item.getEmail());
+        holder.tvName.setTag(item);
     }
 
     @Override
