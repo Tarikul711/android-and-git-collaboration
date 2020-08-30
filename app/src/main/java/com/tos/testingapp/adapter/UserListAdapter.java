@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.bumptech.glide.Glide;
 import com.tos.testingapp.R;
 import com.tos.testingapp.webapi.user.Datum;
 
@@ -43,6 +44,9 @@ public class UserListAdapter extends RecyclerView.Adapter<UserListAdapter.ViewHo
         Datum item = items.get(position);
         holder.tvName.setText(String.format("%s %s", item.getFirstName(), item.getLastName()));
         holder.tvEmail.setText(item.getEmail());
+        Glide.with(context)
+                .load(item.getAvatar())
+                .into(holder.ivProfileImage);
         holder.tvName.setTag(item);
     }
 
