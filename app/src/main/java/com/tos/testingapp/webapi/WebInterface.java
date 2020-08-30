@@ -1,6 +1,8 @@
 package com.tos.testingapp.webapi;
 
 
+import com.tos.testingapp.webapi.user.UserData;
+
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -15,13 +17,14 @@ import retrofit2.http.Query;
 
 public interface WebInterface {
 
+    @GET(WebMethod.USERS_DATA)
+    Call<UserData> getAllUserData();
 
    /* @FormUrlEncoded
     @POST(WebMethod.CUSTOMER_LOGIN)
     public Call<AccessToken> postLoginRequest(@Field("client_id") String client_id, @Field("username") String username, @Field("password") String password, @Field("grant_type") String grant_type);
 
-    @GET(WebMethod.PROFILE)
-    Call<UserProfile> getUserProfileData(@Header("Authorization") String token);
+
 
     @GET(WebMethod.BRANCHES)
     Call<Branches> getBranchesData(@Header("Authorization") String token);

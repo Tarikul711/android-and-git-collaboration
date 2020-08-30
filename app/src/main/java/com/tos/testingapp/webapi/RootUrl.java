@@ -5,5 +5,5 @@ package com.tos.testingapp.webapi;
  */
 
 public class RootUrl {
-    public static String BASE_URL_LOGIN = "https://dev.auth.mobi4.me/auth/";
+    public static String BASE_URL = "https://reqres.in/api/";
 }
