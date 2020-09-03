@@ -1,5 +1,6 @@
 # android-and-git-collaboration
 
+
 create a new branch 
 	git checkout <branch>
 
